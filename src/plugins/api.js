@@ -1,5 +1,7 @@
-import api from "src/api";
+import api from '../api'
 
-export default function(Vue) {
-  Vue.prototype.$api = api
+const registerApi = (app) => {
+  app.config.globalProperties.$api = api
 }
+
+export { registerApi }
