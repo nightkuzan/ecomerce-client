@@ -17,6 +17,10 @@
       :aspect-ratio="1"
       :src="`${$baseURL}${item.attributes.image.data[0].attributes.url}`"
     ></v-img>
+    <!-- button for go /home/edit -->
+    <button class="bg-blue-500 hover:bg-blue-600 text-black py-2 px-4 rounded-lg" @click="$router.push('home/edit')">
+      Edit
+    </button>
   </div>
   <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg" @click="logout">Logout</button>
 </template>
