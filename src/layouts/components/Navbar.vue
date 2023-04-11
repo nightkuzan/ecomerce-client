@@ -1,18 +1,21 @@
 <template>
-  <v-app-bar color="info" density="compact">
-    <template v-slot:prepend>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    </template>
-    <div class="col-span-7 hidden sm:block">
-      <Breadcrumb class="pt-6" />
+  <nav class="shadow-lg bg-success rounded-xl py-1">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <div class="flex-shrink-0 col-span-2 md:col-span-1 hidden sm:block">
+          <!-- <img
+            src="@/assets/img/logos/termtem-logo.png"
+            style="margin-top: 2px; height: 38px"
+            alt="main_logo"
+          /> -->
+          LOGO
+        </div>
+        <div class="col-7 d-sm-block d-none">
+          <Breadcrumb style="padding-top: 6px" />
+        </div>
+      </div>
     </div>
-
-    <v-app-bar-title>Photos</v-app-bar-title>
-
-    <template v-slot:append>
-      <v-btn icon="mdi-dots-vertical"></v-btn>
-    </template>
-  </v-app-bar>
+  </nav>
 </template>
 
 <script>
