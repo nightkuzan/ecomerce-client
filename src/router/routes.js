@@ -27,6 +27,10 @@ const routes = [
         path: '',
         component: () => import('@/views/home/Home.vue'),
       },
+      {
+        path: 'edit',
+        component: () => import('@/views/home/Edit.vue'),
+      },
     ],
   },
 ]
